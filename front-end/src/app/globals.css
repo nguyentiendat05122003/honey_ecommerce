@@ -2,32 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html{
+  font-size: 62.5% !important;
+}
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+:root {
+  --primary-color: #fbb321;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.55;
 }
 
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+@layer components {
+  .text-price-headerSale {
+    @apply md:text-base font-bold text-sm 
+  }
+  .border-base{
+    @apply border-solid border-[1px]
+  }
+  .line{
+    @apply h-[0.2rem] rounded-[0.4rem] bg-primary-color block my-[0.5rem] mx-0 transition-all duration-500 ease-in-out origin-center
+  }
+}
+
+button, select {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: "Quicksand", sans-serif;
 }
