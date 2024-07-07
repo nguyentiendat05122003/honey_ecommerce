@@ -1,7 +1,5 @@
 import NavLinkHeader from "@/components/nav-link-header";
 import { LINK_NAVIGATE_HEADER } from "@/constant";
-import Link from "next/link";
-import React from "react";
 
 export default function HeaderNavigate() {
   return (

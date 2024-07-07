@@ -15,6 +15,8 @@ html{
 
 :root {
   --primary-color: #fbb321;
+  --size-hd-sale:4rem;
+  --size-hd-top: 7rem;
 }
 
 body {
@@ -46,6 +48,12 @@ body {
   }
   .line{
     @apply h-[0.2rem] rounded-[0.4rem] bg-primary-color block my-[0.5rem] mx-0 transition-all duration-500 ease-in-out origin-center
+  }
+  .line-active{
+    transform: translate3d(0, 0.3rem, 0) rotate(45deg) !important;
+  }
+  .top{
+    top: calc(var(--size-hd-sale) + var(--size-hd-top))
   }
 }
 

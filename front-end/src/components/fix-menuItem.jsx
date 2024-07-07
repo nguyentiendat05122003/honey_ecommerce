@@ -28,7 +28,8 @@ export default function FixMenuItem({
         {icon && <FontAwesomeIcon color={color} icon={icon} />}
         {image && (
           <span
-            className={`w-2 h-2 rounded-full flex justify-center items-center bg-[${opacityColor}] shrink-0`}
+            style={{ backgroundColor: opacityColor }}
+            className={`w-2 h-2 rounded-full flex justify-center items-center shrink-0`}
           >
             <Image
               className="w-[1.2rem] block h-auto max-w-full"

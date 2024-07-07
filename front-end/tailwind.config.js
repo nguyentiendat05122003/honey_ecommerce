@@ -8,8 +8,8 @@ module.exports = {
   theme: {
     extend: {
       height: {
-        "size-hd-sale": "4rem",
-        "size-hd-top": "7rem",
+        "size-hd-sale": "var(--size-hd-sale)",
+        "size-hd-top": "var(--size-hd-top)",
       },
       colors: {
         "primary-color": "var(--primary-color)",
@@ -45,6 +45,7 @@ module.exports = {
       },
       backgroundImage: {
         bee: "url('../assets/images/bee.png')",
+        leaf: "url('../assets/images/leaf.svg')",
       },
       keyframes: {
         beeRotate: {
@@ -67,6 +68,11 @@ module.exports = {
       },
       boxShadow: {
         shadowFixMenu: "rgba(99, 99, 99, 0.2) 0px -2px 8px 0px",
+        shadowMobileNavbar: "0px 10px 24px rgba(0, 0, 0, 0.05)",
+      },
+      opacity: {
+        80: ".8",
+        10: ".1",
       },
     },
   },

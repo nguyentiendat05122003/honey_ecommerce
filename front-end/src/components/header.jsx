@@ -10,6 +10,8 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
+import IconMenu from "@/components/icon-menu";
+import MobileOverlay from "@/components/mobile-overlay";
 
 export default function Header() {
   return (
@@ -58,21 +60,15 @@ export default function Header() {
                     opacityColor="#d9e7d6"
                   />
                   <div className="lg:hidden py-1 flex items-center gap-1">
-                    <div className="hidden sm:block lg:hidden  text-base font-medium">
-                      Menu
-                    </div>
-                    <div className="lg:hidden sm:ml-0 ml-[0.5rem] relative">
-                      <span className="w-[2.4rem] line"></span>
-                      <span className="w-[1.8rem] ml-auto line"></span>
-                    </div>
+                    <IconMenu />
                   </div>
                 </div>
               </div>
-              <HeaderNavigate />
             </div>
           </div>
         </div>
       </div>
+      <MobileOverlay />
     </header>
   );
 }
