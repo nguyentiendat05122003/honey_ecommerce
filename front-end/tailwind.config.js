@@ -10,6 +10,7 @@ module.exports = {
       height: {
         "size-hd-sale": "var(--size-hd-sale)",
         "size-hd-top": "var(--size-hd-top)",
+        "size-hd-bot": "var(--size-hd-bot)",
       },
       colors: {
         "primary-color": "var(--primary-color)",
@@ -28,6 +29,7 @@ module.exports = {
       },
       borderRadius: {
         "br-header-sale": "0 0 2.4rem 2.4rem",
+        base: "var(--radius)",
       },
       screens: {
         tablet: { max: "700px" },

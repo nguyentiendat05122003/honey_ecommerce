@@ -64,6 +64,7 @@ export default function Header() {
                   </div>
                 </div>
               </div>
+              <HeaderNavigate />
             </div>
           </div>
         </div>

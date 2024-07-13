@@ -16,7 +16,9 @@ html{
 :root {
   --primary-color: #fbb321;
   --size-hd-sale:4rem;
+  --size-hd-bot:0rem;
   --size-hd-top: 7rem;
+  --radius:2.4rem
 }
 
 body {
@@ -55,6 +57,9 @@ body {
   .top{
     top: calc(var(--size-hd-sale) + var(--size-hd-top))
   }
+  .padding-topBanner{
+    padding-top:  1.5rem;
+  }
 }
 
 button, select {
@@ -63,3 +68,4 @@ button, select {
   cursor: pointer;
   font-family: "Quicksand", sans-serif;
 }
+
