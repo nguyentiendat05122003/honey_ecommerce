@@ -103,3 +103,37 @@ export const FIX_MENU = [
     opacityColor: "#fbb321",
   },
 ];
+
+export const DISCOUNT_LIST = [
+  {
+    id: 0,
+    title: "Hóa đơn trên 50.000 đ",
+    color: "#fbb321",
+    donors: "ACBBANK",
+  },
+  { id: 1, title: "Hóa đơn trên 50.000 đ", color: "#8a5e3b", donors: "HDBANK" },
+  {
+    id: 2,
+    title: "Hóa đơn trên 50.000 đ",
+    color: "#039AFF",
+    donors: "VIETCOMBANK",
+  },
+  {
+    id: 3,
+    title: "Hóa đơn trên 50.000 đ",
+    color: "#408630",
+    donors: "CHAOBANMOI",
+  },
+  {
+    id: 4,
+    title: "Hóa đơn trên 50.000 đ",
+    color: "#f2703e",
+    donors: "SaleBig",
+  },
+  {
+    id: 5,
+    title: "Hóa đơn trên 50.000 đ",
+    color: "#fbb321",
+    donors: "MIENPHIGH",
+  },
+];

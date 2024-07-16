@@ -9,22 +9,14 @@ export default function Banner() {
       <div className="relative">
         <div>
           <Carousel
-            autoplay
-            className="w-[384px] px-[1.2rem] md:w-[814px] lg:w-[1249px] lg:px-[1.5rem]"
+            autoplay={true}
+            className="rounded-[0.8rem] lg:rounded-base w-[384px] px-[1.2rem] md:w-[814px] lg:w-[1250px] lg:px-[1.2rem] overflow-hidden"
           >
-            <div className="">
-              <Image
-                src={slider1}
-                alt="slider"
-                className="rounded-[0.8rem] lg:rounded-base"
-              />
+            <div>
+              <Image src={slider1} alt="slider" className="" />
             </div>
-            <div className="">
-              <Image
-                src={slider2}
-                alt="slider"
-                className="rounded-[0.8rem] lg:rounded-base"
-              />
+            <div>
+              <Image src={slider2} alt="slider" />
             </div>
           </Carousel>
         </div>

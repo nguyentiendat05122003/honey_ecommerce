@@ -18,7 +18,9 @@ html{
   --size-hd-sale:4rem;
   --size-hd-bot:0rem;
   --size-hd-top: 7rem;
-  --radius:2.4rem
+  --radius:2.4rem;
+  --pd-block: 2rem;
+  --pd-inline: 3rem;
 }
 
 body {
@@ -60,6 +62,16 @@ body {
   .padding-topBanner{
     padding-top:  1.5rem;
   }
+  .beforeGiftCircle{
+    width: calc(var(--pd-inline)* 2 - 1.5rem);
+    height: calc(var(--pd-inline)* 2 - 1.5rem);
+  }
+  .beforeGiftCircleRight{
+    right: calc((var(--pd-inline)* 2 - 1.5rem) / 2* -1);
+  }
+  .beforeGiftCircleLeft{
+    left: calc((var(--pd-inline)* 2 - 1.5rem) / 2* -1);
+  }
 }
 
 button, select {
@@ -68,4 +80,10 @@ button, select {
   cursor: pointer;
   font-family: "Quicksand", sans-serif;
 }
+.hide-scroll-bar::-webkit-scrollbar {
+  display: none;
+}
 
+.slick-slider,.slick-list,.slick-track{
+  border-radius: inherit;
+}
