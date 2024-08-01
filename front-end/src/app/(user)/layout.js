@@ -1,9 +1,11 @@
+import 'swiper/css/pagination';
 import "../globals.css";
+import 'swiper/css';
+
 import localFont from "next/font/local";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
 import Header from "@/components/header";
 import FixMenu from "@/components/fix-menu";
-import HeaderNavigate from "@/components/header-navigate";
 const quicksand = localFont({
   src: [
     {

@@ -21,6 +21,9 @@ html{
   --radius:2.4rem;
   --pd-block: 2rem;
   --pd-inline: 3rem;
+  --swiper-pagination-active-color: #fff;
+  --width-banner:calc(100% + ((100vw - 120rem) / 2) - 1.5rem);
+  --cricle:-0.4rem;  
 }
 
 body {
@@ -84,6 +87,52 @@ button, select {
   display: none;
 }
 
-.slick-slider,.slick-list,.slick-track{
-  border-radius: inherit;
+.swiper-pagination-bullet{
+  --swiper-pagination-active-color: #fbb321;
+  background-color: var(--swiper-pagination-active-color)!important;
+  opacity: 1!important;
+  position: relative;
 }
+.swiper-pagination-bullet::before{
+  content: '';
+  position: absolute;
+  border:1px solid transparent;
+  border-radius: 100rem;
+  top:var(--cricle);
+  right:var(--cricle);
+  left:var(--cricle);
+  bottom:var(--cricle);
+
+}
+
+.swiper-pagination-bullet-active-primary{
+  --swiper-pagination-active-color: #fbb321;
+
+}
+.swiper-pagination-bullet-active{
+  background-color: var(--swiper-pagination-active-color)!important;
+  position: relative;
+}
+.swiper-pagination-bullet-active::before{
+  content: '';
+  position: absolute;
+  border:1px solid #fbb321;
+  border-radius: 100rem;
+  top:var(--cricle);
+  right:var(--cricle);
+  left:var(--cricle);
+  bottom:var(--cricle);
+}
+.swiper-pagination {
+  margin-top: 2rem;
+}
+.bannder-image{
+  padding-top: calc((550 / 1448) * 100%);
+}
+@media only screen and (max-width: 767px) {
+  :root{
+    --pd-block: 1.4rem;
+    --pd-inline: 2rem;
+  }
+}
+

@@ -12,6 +12,9 @@ module.exports = {
         "size-hd-top": "var(--size-hd-top)",
         "size-hd-bot": "var(--size-hd-bot)",
       },
+      width:{
+        "width-banner" : "var(--width-banner)"
+      },
       colors: {
         "primary-color": "var(--primary-color)",
         "primary-color-opacity": "#fef0d3",
@@ -21,6 +24,10 @@ module.exports = {
         "third-color-opacity": "#d9e7d6",
         "body-color": "#444",
         "border-color": "rgba(0, 0, 0, 0.1)",
+      },
+      padding:{
+        "gift-block":"var(--pd-block)",
+        "gift-inline":"var(--pd-inline)",
       },
       fontSize: {
         base: "1.6rem",
