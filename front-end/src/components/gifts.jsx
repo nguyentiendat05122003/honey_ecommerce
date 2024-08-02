@@ -30,7 +30,6 @@ export default function Gifts() {
         <div className="xl:w-[1225px] overflow-x-auto hide-scroll-bar swiper-pagination-bullet-active-primary">
           <Swiper
             spaceBetween={12}
-            slidesPerView={1.35}
             breakpoints={{
               767: {
                 slidesPerView: 1.35,
@@ -46,6 +45,9 @@ export default function Gifts() {
               },
               1024: {
                 slidesPerView: 5,
+                pagination: {
+                  enabled: false,
+                },
               },
             }}
             {...params}

@@ -17,7 +17,6 @@ export default function Banner() {
               disableOnInteraction: false,
             }}
             loop={true}
-            className=""
           >
             <SwiperSlide className="!h-full ">
               <div className="relative block bannder-image">

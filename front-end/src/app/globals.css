@@ -24,6 +24,8 @@ html{
   --swiper-pagination-active-color: #fff;
   --width-banner:calc(100% + ((100vw - 120rem) / 2) - 1.5rem);
   --cricle:-0.4rem;  
+  --pd-sc: 8rem;
+  --w:1.9rem;
 }
 
 body {
@@ -135,4 +137,19 @@ button, select {
     --pd-inline: 2rem;
   }
 }
-
+.container{
+    width: 100%;
+    max-width: 123rem;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+.title-sub{
+  padding-right: calc(var(--w) + .4rem);
+}
+.padding-image-product{
+  padding-top: calc((1 / 1)* 100%);
+}
+.border-product{
+  border-color: rgba(0, 0, 0, 0.1);
+}

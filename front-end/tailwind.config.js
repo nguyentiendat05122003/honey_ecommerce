@@ -28,6 +28,7 @@ module.exports = {
       padding:{
         "gift-block":"var(--pd-block)",
         "gift-inline":"var(--pd-inline)",
+        "sc":"var(--pd-sc)"
       },
       fontSize: {
         base: "1.6rem",
