@@ -1,6 +1,9 @@
 import Banner from "@/components/banner";
+import Boll from "@/components/boll";
+import Event from "@/components/event";
 import Gifts from "@/components/gifts";
 import ProductList from "@/components/product-list";
+import Sale from "@/components/sale";
 
 export default function Home() {
   return (
@@ -8,6 +11,9 @@ export default function Home() {
       <Banner />
       <Gifts />
       <ProductList/>
+      <Sale/>
+      <Boll/>
+      <Event/>
     </div>
   );
 }

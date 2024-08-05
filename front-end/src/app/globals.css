@@ -4,6 +4,7 @@
 
 html{
   font-size: 62.5% !important;
+  overflow-x: hidden;
 }
 *{
   margin: 0;
@@ -26,6 +27,9 @@ html{
   --cricle:-0.4rem;  
   --pd-sc: 8rem;
   --w:1.9rem;
+  --size-wave:calc(40 / 1728* 100vw);
+  --gap:1.6rem;
+  --size:4rem
 }
 
 body {
@@ -152,4 +156,118 @@ button, select {
 }
 .border-product{
   border-color: rgba(0, 0, 0, 0.1);
+}
+.waveContainer {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  background-color: #ffb700;
+}
+
+.waves {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+.margin-top-Sale{
+  margin-top: calc(var(--size-wave) + var(--pd-sc));
+}
+
+.right-Timer::after{
+  right: calc(var(--gap) / 2* -1 - .3rem);
+}
+
+.button-navigation{
+  width: var(--size);
+  height: var(--size);
+  color:var(--primary-color);
+  transition:all 0.3 ease-in-out;
+}
+.button-navigation:hover{
+  color: white;
+}
+.button-navigation::before{
+  content: '';
+  position: absolute;
+  top: 0; 
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background-color: var(--primary-color);
+  transition: 0.3s ease-out;
+  z-index: -1;
+  border-radius: 999px;
+}
+.button-navigation:hover::before {
+  width: 100%;
+}
+.button-navigation-left{
+  right: unset;
+  left: calc(var(--size) / 2* -1);
+}
+
+.button-navigation-right{
+  left: unset;
+  right: calc(var(--size) / 2* -1);
+}
+
+.wave {
+  width: 100%;
+  --size: 25px;
+  --R: calc(var(--size)*1.28);
+  -webkit-mask:
+    radial-gradient(var(--R) at 50% calc(1.8*var(--size)),#000 99%,#0000 101%) 
+      calc(50% - 2*var(--size)) 0/calc(4*var(--size)) 100%,
+    radial-gradient(var(--R) at 50% calc(-.8*var(--size)),#0000 99%,#000 101%) 
+      50% var(--size)/calc(4*var(--size)) 100% repeat-x;
+  background: linear-gradient(90deg,#fbb321,#fbb321);
+  height: 85px;
+  -webkit-transform: translateZ(0);
+}
+
+.rounded-custom {
+  border-radius: 30rem 0 0 0;
+}
+.event-right-inner{
+  width: calc(100% + (100vw - 120rem) / 2);
+}
+.text-black-heading{
+  color:rgb(68, 68, 68);
 }
