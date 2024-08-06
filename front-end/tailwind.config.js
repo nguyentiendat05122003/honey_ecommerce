@@ -31,6 +31,7 @@ module.exports = {
         "gift-inline":"var(--pd-inline)",
         "sc":"var(--pd-sc)"
       },
+      
       fontSize: {
         base: "1.6rem",
         sm: "1.4rem",

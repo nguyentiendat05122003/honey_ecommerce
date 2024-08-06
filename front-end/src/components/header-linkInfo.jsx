@@ -17,14 +17,18 @@ export default function LinkInfo({
   if (!href) {
     Comp = "div";
   }
+
   return (
     <Comp
       href={href}
-      className={`flex item gap-1 text-sm whitespace-normal cursor-pointer no-underline ${className} relative`}
+      className={`flex item gap-1 text-sm whitespace-normal cursor-pointer no-underline ${className} relative group`}
     >
       <span
-        style={{ backgroundColor: `${opacityColor}` }}
-        className={`w-[4rem] h-[4rem] before:contents-[''] before:absolute before:scale-[1.2] sm:before:scale-0 before:left-0 before:right-0 before:top-0 before:bottom-0 before:border-base before:border-[#FDE2D9] before:rounded-full before:z-10 sm:w-[4.4rem] sm:h-[4.4rem] rounded-[100rem] flex justify-center items-center shrink-0 relative`}
+        style={{
+          backgroundColor: `${opacityColor}`,
+          borderColor: `${opacityColor}`,
+        }}
+        className={`w-[4rem] h-[4rem] before:content-[''] before:absolute before:scale-100 before:left-0 before:right-0 before:top-0 before:bottom-0 before:border-base  before:rounded-full before:ease-in-out before:z-10 before:transition-transform before:duration-300 before:border-inherit group-hover:before:scale-[1.2] rounded-[100rem] flex justify-center items-center shrink-0 relative`}
       >
         {image ? (
           <Image

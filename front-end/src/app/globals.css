@@ -135,12 +135,7 @@ button, select {
 .bannder-image{
   padding-top: calc((550 / 1448) * 100%);
 }
-@media only screen and (max-width: 767px) {
-  :root{
-    --pd-block: 1.4rem;
-    --pd-inline: 2rem;
-  }
-}
+
 .container{
     width: 100%;
     max-width: 123rem;
@@ -270,4 +265,17 @@ button, select {
 }
 .text-black-heading{
   color:rgb(68, 68, 68);
+}
+.footer{
+  border-radius: 2.4rem 2.4rem 0 0;
+}
+
+@media only screen and (max-width: 767px) {
+  :root{
+    --pd-block: 1.4rem;
+    --pd-inline: 2rem;
+  }
+  .event-right-inner{
+    width: calc(100% + 1.5rem);
+  }
 }

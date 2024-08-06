@@ -70,8 +70,8 @@ export default function Event() {
                   </div>
                 </div>
               </div>
-              <div className="md:col-span-5 md:grid-cols-12  flex flex-col justify-end px-[12px] mb-[24px]">
-                <div className="relative lg:event-right-inner w-[calc(100%+1.5rem)]">
+              <div className="md:col-span-5 md:grid-cols-12  flex flex-col justify-end px-[12px]">
+                <div className="relative !w-full event-right-inner">
                   <div className="absolute r-0 w-[90%] rounded-custom bottom-0 top-[5rem] right-0 bg-primary-color -z-10"></div>
                   <div className="w-[41.6rem] max-w-full">
                     <Image

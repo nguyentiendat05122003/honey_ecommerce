@@ -6,6 +6,7 @@ import Search from "@/components/search";
 import iconSearch from "@/assets/images/icon-search.svg";
 import {
   faCartShopping,
+  faMagnifyingGlass,
   faPhoneVolume,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
@@ -24,7 +25,11 @@ export default function Header() {
             <div className="header-right flex-1">
               <div className="header-top h-size-hd-top flex items-center">
                 <div className="flex-1 hidden md:block">
-                  <Search />
+                  <Search
+                    text="Nhập từ khoá tìm kiếm..."
+                    icon={faMagnifyingGlass}
+                    active={true}
+                  />
                 </div>
                 <div className="header-info flex items-center gap-[1.6rem] ml-auto md:ml-[2.4rem] lg:ml-[6rem] md:gap-[2.4rem]">
                   <LinkInfo

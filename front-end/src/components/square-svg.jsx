@@ -1,13 +1,15 @@
 import React from "react";
 
-export default function SquareSvg({ style = {}, className }) {
+export default function SquareSvg({ style = {}, className, primary }) {
   return (
     <div
       style={style}
       className={`w-[4.8rem] absolute bottom-0 opacity-0 animate-fruitAnm z-100 ${className}`}
     >
       <svg
-        className="w-full h-full text-white opcity-60"
+        className={`w-full h-full opcity-60 ${
+          primary ? "text-primary-color" : "text-white"
+        }`}
         width="800px"
         height="800px"
         viewBox="0 0 20 20"

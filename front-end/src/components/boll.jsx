@@ -8,7 +8,8 @@ export default function Boll() {
   const swiperRef = useRef(null);
   useEffect(() => {
     const handleScroll = () => {
-      if (swiperRef.current) {
+      if (window.innerWidth >= 1024 && swiperRef.current) {
+        // Check if the screen width is at least 1024px (laptop size)
         const scrollTop =
           window.pageYOffset || document.documentElement.scrollTop;
         const scrollHeight =
@@ -18,8 +19,6 @@ export default function Boll() {
         const swiper = swiperRef.current;
         const slideCount = swiper.slides.length;
         let newIndex = Math.floor(scrollPercent * slideCount);
-
-        // Loop the slide index
         if (newIndex >= slideCount) {
           newIndex = newIndex % slideCount;
         }
@@ -31,6 +30,7 @@ export default function Boll() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   return (
     <div className="h-[20rem] lg:h-[32rem] relative overflow-hidden ">
       <div className=" absolute h-[6rem] bg-primary-color bottom-0 lg:bottom-[3rem] left-0 w-full -z-10"></div>
